@@ -22,7 +22,28 @@ FeedPulse is an intelligent, AI-powered product feedback management platform. It
 ![Admin Dashboard](images/AdminDashBoard.png)
 
 
-## 🚀 How to Run Locally
+## 🐳 How to Run with Docker (Recommended for ease of use)
+
+You can spin up the entire platform (Frontend, Backend, and MongoDB) effortlessly using Docker perfectly configured via `docker-compose`.
+
+### Prerequisites
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### Quick Start
+1. Generate your `GEMINI_API_KEY` (See Step 3 below).
+2. Configure your `.env` file in the `backend` folder (See Step 4). *Note: You don't need a Mongo URI if you're using Docker, as it spins up its own database instance!*
+3. Open your terminal in the main `FeedPulse` folder.
+4. Start the application by running:
+   ```bash
+   docker-compose up --build
+   ```
+5. The application is fully live:
+   - **Frontend:** [http://localhost:3000](http://localhost:3000)
+   - **Backend API:** [http://localhost:5000](http://localhost:5000)
+
+---
+
+## 🚀 How to Run Locally (Manual Mode)
 
 Follow these step-by-step instructions to get FeedPulse running flawlessly on your local machine.
 
